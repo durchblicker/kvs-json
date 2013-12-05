@@ -1,0 +1,29 @@
+{
+  "name": "kvs-json",
+  "version": "0.1.0",
+  "description": "wraps a KVS to convert stuff to/from JSON",
+  "main": "json.js",
+  "scripts": {
+    "test": "./node_modules/.bin/lab"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipobscure/kvs-json.git"
+  },
+  "keywords": [
+    "kvs",
+    "json"
+  ],
+  "author": "Philipp Dunkel <pip@pipobscure.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pipobscure/kvs-json/issues"
+  },
+  "dependencies":{
+    "kvs-abstract": "~0.1.0"
+  },
+  "devDependencies": {
+    "joi": "~2.0.3",
+    "lab": "~1.2.2"
+  }
+}
