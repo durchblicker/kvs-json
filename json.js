@@ -27,6 +27,6 @@ KVSJson.prototype._get = function(name, callback) {
   });
 };
 KVSJson.prototype._set = function(name, value, callback) {
-  value = Buffer.isBuffer(value) ? value : JSON.stringify(value);
+  value = Buffer.isBuffer(value) ? value : new Buffer(JSON.stringify(value));
   this.store.set(name, value, callback);
 };
