@@ -1,6 +1,6 @@
 {
   "name": "kvs-json",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "wraps a KVS to convert stuff to/from JSON",
   "main": "json.js",
   "scripts": {

@@ -5,6 +5,8 @@
 'use strict';
 
 module.exports = KVSJson;
+module.exports.kvt = 'utility';
+
 var Abstract = require('kvs-abstract');
 
 Abstract.bequeath(KVSJson);
