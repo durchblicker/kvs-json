@@ -19,8 +19,9 @@
   "bugs": {
     "url": "https://github.com/pipobscure/kvs-json/issues"
   },
-  "dependencies":{
-    "kvs-abstract": "~0.1.0"
+  "dependencies": {
+    "kvs-abstract": "~0.1.0",
+    "sanitize-html": "^1.12.0"
   },
   "devDependencies": {
     "joi": "~2.0.3",
