@@ -54,11 +54,6 @@ function sanitizeString (elem) {
 function applyFunctionOnLeafNodeValues (fn, obj) {
   if (!obj) {
     return obj;
-  } else if (obj.isArray) {
-    obj.forEach(function (elem, key) {
-      obj[key] = applyFunctionOnLeafNodeValues.call(this, fn, elem);
-    });
-    return obj;
   } else if (typeof obj === 'object') {
     Object.keys(obj).forEach(function (key) {
       obj[key] = applyFunctionOnLeafNodeValues.call(this, fn, obj[key]);
