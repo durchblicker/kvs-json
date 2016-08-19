@@ -44,7 +44,10 @@ KVSJson.prototype._set = function(name, value, callback) {
 function sanitizeString (elem) {
   if (typeof elem === 'string') {
     return sanitizeHtml(elem, {
-      allowedTags: ['b', 'i']
+      allowedTags: ['b', 'i', 'span'],
+      allowedAttributes: {
+        'span': ['style']
+      }
     });
   } else {
     return elem;
